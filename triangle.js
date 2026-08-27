@@ -20,7 +20,10 @@ window.onload = function init()
 
     points = new Float32Array([
         -1, -1 ,
-        0,  1 ,
+        -0.5,  1 ,
+        0, -1,
+        0, -1,
+        0.5, 1,
         1, -1
     ]);
 
@@ -54,5 +57,5 @@ window.onload = function init()
 function render() {
     console.log("Rendering");
     gl.clear( gl.COLOR_BUFFER_BIT );
-    gl.drawArrays( gl.TRIANGLES, 0, 3 );
+    gl.drawArrays( gl.TRIANGLES, 0, 6 );
 }
